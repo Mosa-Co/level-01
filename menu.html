@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Café Arabica</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/style/styles.css">
+</head>
+<body class="menu-page">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-coffee me-2"></i>
+                <span class="brand-text">Café Arabica</span>
+            </a>
+            
+            <div class="navbar-controls d-flex align-items-center">
+                <!-- Language Toggle -->
+                <div class="language-toggle me-3">
+                    <span class="lang-label active" data-lang="en">EN</span>
+                    <label class="switch">
+                        <input type="checkbox" id="languageSwitch">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="lang-label" data-lang="ar">ع</span>
+                </div>
+                
+                <!-- Theme Toggle -->
+                <div class="theme-toggle">
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeSwitch">
+                        <span class="theme-slider">
+                            <i class="fas fa-sun sun-icon"></i>
+                            <i class="fas fa-moon moon-icon"></i>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <section class="menu-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="menu-title" data-en="Our Menu" data-ar="قائمتنا">Our Menu</h1>
+                    <p class="menu-subtitle" data-en="Discover our delicious selection" data-ar="اكتشف مجموعتنا اللذيذة">Discover our delicious selection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-categories">
+        <div class="container">
+            <!-- Category Tabs -->
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center mb-5" id="menuTabs">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#hot-drinks">
+                                <i class="fas fa-coffee me-2"></i>
+                                <span data-en="Hot Drinks" data-ar="المشروبات الساخنة">Hot Drinks</span>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#frappe">
+                                <i class="fas fa-snowflake me-2"></i>
+                                <span data-en="Frappé" data-ar="الفرابيه">Frappé</span>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#juices">
+                                <i class="fas fa-lemon me-2"></i>
+                                <span data-en="Fresh Juices" data-ar="العصائر الطازجة">Fresh Juices</span>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#milkshakes">
+                                <i class="fas fa-ice-cream me-2"></i>
+                                <span data-en="Milkshakes" data-ar="الميلك شيك">Milkshakes</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Menu Content -->
+            <div class="tab-content" id="menuContent">
+                <!-- Hot Drinks -->
+                <div class="tab-pane fade show active" id="hot-drinks">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Espresso" data-ar="إسبريسو">Espresso</h5>
+                                <p data-en="Rich and bold coffee shot" data-ar="قهوة غنية وقوية">Rich and bold coffee shot</p>
+                                <span class="price">25 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Cappuccino" data-ar="كابتشينو">Cappuccino</h5>
+                                <p data-en="Espresso with steamed milk foam" data-ar="إسبريسو مع رغوة الحليب">Espresso with steamed milk foam</p>
+                                <span class="price">35 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Latte" data-ar="لاتيه">Latte</h5>
+                                <p data-en="Smooth espresso with steamed milk" data-ar="إسبريسو ناعم مع الحليب المبخر">Smooth espresso with steamed milk</p>
+                                <span class="price">40 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Turkish Coffee" data-ar="قهوة تركية">Turkish Coffee</h5>
+                                <p data-en="Traditional Turkish coffee" data-ar="قهوة تركية تقليدية">Traditional Turkish coffee</p>
+                                <span class="price">30 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Tea" data-ar="شاي">Tea</h5>
+                                <p data-en="Selection of premium teas" data-ar="مجموعة من الشاي الفاخر">Selection of premium teas</p>
+                                <span class="price">20 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Hot Chocolate" data-ar="شوكولاتة ساخنة">Hot Chocolate</h5>
+                                <p data-en="Rich creamy chocolate drink" data-ar="مشروب شوكولاتة كريمي غني">Rich creamy chocolate drink</p>
+                                <span class="price">35 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frappé -->
+                <div class="tab-pane fade" id="frappe">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Coffee Frappé" data-ar="فرابيه قهوة">Coffee Frappé</h5>
+                                <p data-en="Iced blended coffee drink" data-ar="مشروب قهوة مثلج مخلوط">Iced blended coffee drink</p>
+                                <span class="price">45 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Caramel Frappé" data-ar="فرابيه كراميل">Caramel Frappé</h5>
+                                <p data-en="Sweet caramel iced coffee" data-ar="قهوة مثلجة بالكراميل الحلو">Sweet caramel iced coffee</p>
+                                <span class="price">50 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Vanilla Frappé" data-ar="فرابيه فانيليا">Vanilla Frappé</h5>
+                                <p data-en="Smooth vanilla iced coffee" data-ar="قهوة مثلجة بالفانيليا الناعمة">Smooth vanilla iced coffee</p>
+                                <span class="price">48 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Mocha Frappé" data-ar="فرابيه موكا">Mocha Frappé</h5>
+                                <p data-en="Chocolate coffee blend" data-ar="خليط الشوكولاتة والقهوة">Chocolate coffee blend</p>
+                                <span class="price">52 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fresh Juices -->
+                <div class="tab-pane fade" id="juices">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Orange Juice" data-ar="عصير برتقال">Orange Juice</h5>
+                                <p data-en="Fresh squeezed oranges" data-ar="برتقال طازج معصور">Fresh squeezed oranges</p>
+                                <span class="price">30 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Apple Juice" data-ar="عصير تفاح">Apple Juice</h5>
+                                <p data-en="Pure apple juice" data-ar="عصير تفاح نقي">Pure apple juice</p>
+                                <span class="price">32 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Mango Juice" data-ar="عصير مانجو">Mango Juice</h5>
+                                <p data-en="Tropical mango blend" data-ar="خليط مانجو استوائي">Tropical mango blend</p>
+                                <span class="price">35 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Mixed Fruits" data-ar="عصير فواكه مشكلة">Mixed Fruits</h5>
+                                <p data-en="Seasonal fruit combination" data-ar="خليط فواكه الموسم">Seasonal fruit combination</p>
+                                <span class="price">40 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Milkshakes -->
+                <div class="tab-pane fade" id="milkshakes">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Chocolate Milkshake" data-ar="ميلك شيك شوكولاتة">Chocolate Milkshake</h5>
+                                <p data-en="Rich chocolate milkshake" data-ar="ميلك شيك شوكولاتة غني">Rich chocolate milkshake</p>
+                                <span class="price">42 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Vanilla Milkshake" data-ar="ميلك شيك فانيليا">Vanilla Milkshake</h5>
+                                <p data-en="Classic vanilla flavor" data-ar="نكهة فانيليا كلاسيكية">Classic vanilla flavor</p>
+                                <span class="price">40 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Strawberry Milkshake" data-ar="ميلك شيك فراولة">Strawberry Milkshake</h5>
+                                <p data-en="Fresh strawberry blend" data-ar="خليط فراولة طازجة">Fresh strawberry blend</p>
+                                <span class="price">45 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item-card">
+                                <h5 data-en="Oreo Milkshake" data-ar="ميلك شيك أوريو">Oreo Milkshake</h5>
+                                <p data-en="Cookies and cream delight" data-ar="كوكيز وكريمة لذيذة">Cookies and cream delight</p>
+                                <span class="price">48 <span data-en="EGP" data-ar="جنيه">EGP</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 data-en="Visit Us Today" data-ar="زورونا اليوم">Visit Us Today</h5>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-en="123 Coffee Street, Downtown Cairo, Egypt" data-ar="123 شارع القهوة، وسط القاهرة، مصر">123 Coffee Street, Downtown Cairo, Egypt</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+20 123 456 7890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@cafearabica.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 data-en="Hours" data-ar="ساعات العمل">Hours</h5>
+                    <p data-en="Open Daily: 7:00 AM - 11:00 PM" data-ar="مفتوح يومياً: 7:00 ص - 11:00 م">Open Daily: 7:00 AM - 11:00 PM</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 data-en="Follow Us" data-ar="تابعونا">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Google Maps -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1842094555387!2d31.235411915440315!3d30.04441998188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sus!4v1635959847852!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="copyright" data-en="© 2024 Café Arabica. All rights reserved. | Powered by Mosa" data-ar="© 2024 قهوة عربيكا. جميع الحقوق محفوظة. | مدعوم من موسى">© 2024 Café Arabica. All rights reserved. | Powered by Mosa</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Brand Configuration -->
+    <script src="config.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./src/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Arabica - قهوة عربيكا</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/style/styles.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splashScreen" class="splash-screen">
+        <div class="splash-content">
+            <div class="logo-animation">
+                <i class="fas fa-coffee"></i>
+            </div>
+            <h1 class="cafe-name">Café Arabica</h1>
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-coffee me-2"></i>
+                <span class="brand-text">Café Arabica</span>
+            </a>
+            
+            <div class="navbar-controls d-flex align-items-center">
+                <!-- Language Toggle -->
+                <div class="language-toggle me-3">
+                    <span class="lang-label active" data-lang="en">EN</span>
+                    <label class="switch">
+                        <input type="checkbox" id="languageSwitch">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="lang-label" data-lang="ar">ع</span>
+                </div>
+                
+                <!-- Theme Toggle -->
+                <div class="theme-toggle">
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeSwitch">
+                        <span class="theme-slider">
+                            <i class="fas fa-sun sun-icon"></i>
+                            <i class="fas fa-moon moon-icon"></i>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="hero-content">
+                        <!-- Brand Logo -->
+                        <div class="brand-logo mb-4">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <p class="welcome-text" data-en="Welcome to" data-ar="مرحباً بكم في">Welcome to</p>
+                        <h1 class="hero-title" data-en="Café Arabica" data-ar="قهوة عربيكا">Café Arabica</h1>
+                        <p class="hero-subtitle" data-en="Where every cup tells a story" data-ar="حيث كل كوب يحكي حكاية">Where every cup tells a story</p>
+                        <p class="hero-description" data-en="Experience the finest coffee and delicious drinks in a warm, welcoming atmosphere. Our café is your perfect escape from the everyday." data-ar="استمتع بأجود أنواع القهوة والمشروبات اللذيذة في أجواء دافئة ومريحة. مقهانا هو ملاذك المثالي من روتين الحياة اليومية.">Experience the finest coffee and delicious drinks in a warm, welcoming atmosphere.</p>
+                        
+                        <!-- Menu Button -->
+                        <div class="hero-cta mb-4">
+                            <a href="menu.html" class="btn btn-hero" data-en="Go to Our Menu" data-ar="اذهب إلى قائمتنا">Go to Our Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <p class="scroll-text" data-en="Scroll Down" data-ar="تمرير لأسفل">Scroll Down</p>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="about-content">
+                        <div class="about-icon mb-3">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h2 class="section-title mb-3" data-en="About Our Café" data-ar="نبذة عن مقهانا">About Our Café</h2>
+                        <p class="about-text" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-ar="لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسكينغ إيليت. سيد دو إيوسمود تيمبور إنكيديدونت أوت لابوري إت دولوري ماغنا أليكوا.">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-en="Our Menu" data-ar="قائمتنا">Our Menu</h2>
+                    <p class="section-subtitle" data-en="Discover our delicious selection" data-ar="اكتشف مجموعتنا اللذيذة">Discover our delicious selection</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="menu-preview">
+                        <p class="menu-preview-text" data-en="Explore our carefully crafted menu featuring hot drinks, frappés, fresh juices, and delicious milkshakes. Each drink is prepared with love and the finest ingredients." data-ar="استكشف قائمتنا المصممة بعناية والتي تضم المشروبات الساخنة والفرابيه والعصائر الطازجة والميلك شيك اللذيذ. كل مشروب محضر بحب وأجود المكونات.">Explore our carefully crafted menu featuring hot drinks, frappés, fresh juices, and delicious milkshakes. Each drink is prepared with love and the finest ingredients.</p>
+                        <a href="menu.html" class="btn btn-menu-large" data-en="Go to Our Menu" data-ar="اذهب إلى قائمتنا">Go to Our Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 data-en="Visit Us Today" data-ar="زورونا اليوم">Visit Us Today</h5>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-en="123 Coffee Street, Downtown Cairo, Egypt" data-ar="123 شارع القهوة، وسط القاهرة، مصر">123 Coffee Street, Downtown Cairo, Egypt</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+20 123 456 7890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@cafearabica.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 data-en="Hours" data-ar="ساعات العمل">Hours</h5>
+                    <p data-en="Open Daily: 7:00 AM - 11:00 PM" data-ar="مفتوح يومياً: 7:00 ص - 11:00 م">Open Daily: 7:00 AM - 11:00 PM</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 data-en="Follow Us" data-ar="تابعونا">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Google Maps -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1842094555387!2d31.235411915440315!3d30.04441998188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sus!4v1635959847852!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="copyright" data-en="© 2024 Café Arabica. All rights reserved. | Powered by Mosa" data-ar="© 2024 قهوة عربيكا. جميع الحقوق محفوظة. | مدعوم من موسى">© 2024 Café Arabica. All rights reserved. | Powered by Mosa</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Brand Configuration -->
+    <script src="./src/js/script.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
